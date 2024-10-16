@@ -56,7 +56,7 @@ ROOT_URLCONF = 'storefront.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ['C:/Users/ehima/OneDrive/Desktop/Year2/Semester2/SDGproject/Django/Projects/QQ1/templates'],
+        'DIRS': ['/Users/connorharrison/Documents/UniProject/QQ1/templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -118,9 +118,9 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/5.0/howto/static-files/
 
 STATIC_URL = '/static/'
-STATICFILES_DIRS=[os.path.join(BASE_DIR,'static')]
+STATICFILES_DIRS=[os.path.join(BASE_DIR,'templates/static')]
 MEDIA_URL='/images/'
-MEDIA_ROOT=[os.path.join(BASE_DIR,'static/images')]
+MEDIA_ROOT=os.path.join(BASE_DIR,'templates/images')
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
 
